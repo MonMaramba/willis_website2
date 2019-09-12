@@ -7,10 +7,8 @@ function App() {
     <Router>
       <Navbar />
       <br />
-      <Route path="/" exact component="{ExercisesList}" />
-      <Route path="/" exact component="{ExercisesList}" />
-      <Route path="/" exact component="{ExercisesList}" />
-      <Route path="/" exact component="{ExercisesList}" />
+      <Route path="/" exact component="{Home}" />
+      <Route path="/" exact component="{Comments}" />
     </Router>
   );
 }
