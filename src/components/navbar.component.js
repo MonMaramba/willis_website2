@@ -9,7 +9,7 @@ export default class Navbar extends Component {
         <div>
           <div className="left">
             Luminocity
-            <span className="subtext">Light and Sound</span>
+            <span className="subtext">Mobile Light and Sound</span>
           </div>
         </div>
         <div className="right">Blah Blah there</div>
