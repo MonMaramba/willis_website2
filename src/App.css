@@ -1,33 +1,26 @@
-.App {
-  text-align: center;
+.navbar {
+  background-color: rgb(53, 133, 199);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+.left {
+  font: 400 100px/1.3 "Lobster Two", Helvetica, sans-serif;
+  color: #e97e40;
+  text-shadow: -1px -1px 0 rgb(104, 56, 56), 1px -1px 0 #000,
+    -1px 1px 0 rgb(87, 81, 81), 1px 1px 0 rgb(59, 50, 50);
+  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.subtext {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: rgb(238, 235, 243);
+  position: unset;
+  width: 300px;
+  padding-top: 11%;
+  margin-left: -32%;
 }
