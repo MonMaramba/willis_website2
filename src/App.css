@@ -1,5 +1,10 @@
 .navbar {
   background-color: rgb(53, 133, 199);
+  display: flex;
+}
+
+.header_container {
+  flex-grow: 1;
 }
 
 .left {
@@ -8,19 +13,31 @@
   text-shadow: -1px -1px 0 rgb(104, 56, 56), 1px -1px 0 #000,
     -1px 1px 0 rgb(87, 81, 81), 1px 1px 0 rgb(59, 50, 50);
   letter-spacing: 1px;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
   font-style: italic;
   margin-left: 2%;
   display: flex;
+  width: 400px;
 }
 .subtext {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
-
   color: rgb(238, 235, 243);
   position: unset;
   width: 300px;
-  padding-top: 12.5%;
-  margin-left: -39%;
+  padding-top: -10px;
+  margin-left: 4%;
+}
+button .MuiIconButton-label {
+  position: relative;
+  color: #e97e40;
+  padding-left: 50px;
+}
+
+.right {
+  width: 100px;
+  position: relative;
+  /* right: -70%; */
+  float: right;
 }
