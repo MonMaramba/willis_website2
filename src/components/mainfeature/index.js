@@ -6,7 +6,9 @@ const MainFeature = () => {
     <div style={{ position: "relative" }}>
       <Carrousel />
       <div className="testimonial">
-        <div className="wrapper">Salamat!!!</div>
+        <div className="wrapper">
+          "Thanks for making our class reunion a success!" - Linguine
+        </div>
       </div>
     </div>
   );
