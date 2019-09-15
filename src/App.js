@@ -7,10 +7,12 @@ import Navbar from "./components/navbar.component";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <br />
-      {/* <Route path="/" exact component="{Home}" /> */}
-      {/* <Route path="/" exact component="{Comments}" /> */}
+      <div style={{ height: "1500px" }}>
+        <Navbar />
+        <br />
+        {/* <Route path="/" exact component="{Home}" /> */}
+        {/* <Route path="/" exact component="{Comments}" /> */}
+      </div>
     </Router>
   );
 }
