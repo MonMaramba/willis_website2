@@ -9,7 +9,24 @@ import SideDrawer from "./sideDrawer.component";
 
 export default class Navbar extends Component {
   state = {
-    drawerOpen: false
+    drawerOpen: false,
+    navBarShow: false
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY > 0) {
+      this.setState({
+        navBarShow: true
+      });
+    } else {
+      this.setState({
+        navBarShow: false
+      });
+    }
   };
 
   toggleDrawer = value => {
@@ -23,7 +40,9 @@ export default class Navbar extends Component {
       <AppBar
         position="fixed"
         style={{
-          backgroundColor: "rgb(53, 133, 199)",
+          backgroundColor: this.state.navBarShow
+            ? "rgb(53, 133, 199)"
+            : "transparent",
           boxShadow: "none",
           padding: "10px 0px"
         }}
