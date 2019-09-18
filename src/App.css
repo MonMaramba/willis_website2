@@ -73,3 +73,20 @@
 .carousel_image {
   background-size: cover !important;
 }
+
+/* About Us */
+
+.about_container {
+  display: flex;
+  background-color: wheat;
+}
+
+.about_left {
+  text-align: center;
+}
+
+.about_right {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+}

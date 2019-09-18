@@ -14,12 +14,17 @@ const SideDrawer = props => {
         <ListItem button onClick={() => console.log("Main")}>
           Main
         </ListItem>
+        <ListItem button onClick={() => console.log("About")}>
+          About Us
+        </ListItem>
+        <ListItem button onClick={() => console.log("Techonology Stack")}>
+          Our Technology Stack
+        </ListItem>
+
         <ListItem button onClick={() => console.log("Testimonial")}>
           Testimonial
         </ListItem>
-        <ListItem button onClick={() => console.log("Techonology Stack")}>
-          Technology Stack
-        </ListItem>
+
         <ListItem button onClick={() => console.log("Get in touch")}>
           Get in touch
         </ListItem>
