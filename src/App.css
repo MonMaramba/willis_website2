@@ -78,15 +78,69 @@
 
 .about_container {
   display: flex;
-  background-color: wheat;
+  background-color: rgb(241, 238, 233);
+  overflow: hidden;
 }
 
 .about_left {
-  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  padding-left: 12%;
+  padding-right: 3%;
+  padding-top: 2%;
+  float: left;
+  color: grey;
 }
 
 .about_right {
+  position: relative;
+  top: 100px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  top: 25%;
+  right: 10%;
+  height: 300px;
+  padding-right: 10%;
+  margin-left: 15%;
+  height: 15%;
+  text-align: center;
+  float: right;
+  font-size: 15rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  padding: 20px;
+
+  color: #e97c49;
+  text-shadow: -1px -1px 0 rgb(245, 224, 131), 1px -1px 0 #000,
+    -1px 1px 0 rgb(224, 125, 146), 1px 1px 0 rgb(235, 165, 165);
+}
+
+.featured_number {
+  position: relative;
+  right: 20%;
+  text-align: center;
+  float: right;
+  font-size: 15rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  color: #e97c49;
+  text-shadow: -1px -1px 0 rgb(245, 224, 131), 1px -1px 0 #000,
+    -1px 1px 0 rgb(224, 125, 146), 1px 1px 0 rgb(235, 165, 165);
+}
+
+h6 {
+  position: relative;
+  top: 200px;
+  right: 25%;
+  float: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+  color: #7c0606;
+}
+h5 {
+  position: relative;
+  top: 55px;
+  right: 28%;
+  float: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+  color: #7c0606;
 }
