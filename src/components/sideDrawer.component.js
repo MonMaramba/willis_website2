@@ -21,7 +21,7 @@ const SideDrawer = props => {
           Our Technology Stack
         </ListItem>
 
-        <ListItem button onClick={() => console.log("Testimonial")}>
+        <ListItem button onClick={() => console.log("Leave a testimonial")}>
           Testimonial
         </ListItem>
 

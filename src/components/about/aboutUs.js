@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { easePolyOut } from "d3-ease";
 import Animate from "react-move/Animate";
+import Reveal from "react-reveal/Reveal";
 
 export default class AboutUs extends Component {
+  state = {
+    show: false
+  };
   animateText = () => (
     <Animate
       show={true}
@@ -29,7 +33,6 @@ export default class AboutUs extends Component {
           >
             <h2>About Us</h2>
             <br />
-            <br />
           </div>
         );
       }}
@@ -47,7 +50,7 @@ export default class AboutUs extends Component {
         opacity: [1],
         x: [0],
         y: [55],
-        timing: { delay: 400, duration: 1500, ease: easePolyOut }
+        timing: { delay: 400, duration: 500, ease: easePolyOut }
       }}
     >
       {({ opacity, x, y }) => {
@@ -68,9 +71,6 @@ export default class AboutUs extends Component {
               Ever since then, the equipment upgrades have been constant and we
               now offer the latest technologies for lights and sounds.
             </p>
-
-            <br />
-            <br />
           </div>
         );
       }}
@@ -89,7 +89,7 @@ export default class AboutUs extends Component {
         opacity: [1],
         x: [0],
         y: [55],
-        timing: { delay: 600, duration: 1500, ease: easePolyOut }
+        timing: { delay: 600, duration: 2000, ease: easePolyOut }
       }}
     >
       {({ opacity, x, y }) => {
@@ -114,7 +114,6 @@ export default class AboutUs extends Component {
               too complex.
             </p>
             <br />
-            <br />
           </div>
         );
       }}
@@ -123,13 +122,22 @@ export default class AboutUs extends Component {
 
   render() {
     return (
-      <div className="about_container">
-        <div className="about_left">
-          {this.animateText()}
-          {this.animateNext()}
-          {this.animateLast()}
+      <Reveal
+        fraction={0.7}
+        onReveal={() => {
+          this.setState({
+            show: true
+          });
+        }}
+      >
+        <div className="about_container">
+          <div className="about_left">
+            {this.animateText()}
+            {this.animateNext()}
+            {this.animateLast()}
+          </div>
         </div>
-      </div>
+      </Reveal>
     );
   }
 }

@@ -13,7 +13,7 @@
   text-shadow: -1px -1px 0 rgb(245, 224, 131), 1px -1px 0 #000,
     -1px 1px 0 rgb(224, 125, 146), 1px 1px 0 rgb(235, 165, 165);
   letter-spacing: 1px;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 900;
   font-style: italic;
   margin-left: 2%;
@@ -21,10 +21,16 @@
   width: 400px;
 }
 .subtext {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
   color: rgb(238, 235, 243);
-  margin-left: 4%;
+  margin-left: 5.5%;
+  position: relative;
+  top: -5px;
+}
+.MuiListItem-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
 }
 
 .MuiIconButton-label {
@@ -83,11 +89,14 @@
 
 .about_left {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding-left: 12%;
   padding-right: 12%;
-
+  padding-bottom: 4%;
   padding-top: 2%;
   float: left;
   color: grey;
+}
+.about_left h2 {
+  font-size: 3rem;
 }
