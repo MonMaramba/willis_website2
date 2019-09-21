@@ -79,35 +79,36 @@
 .about_container {
   display: flex;
   background-color: rgb(241, 238, 233);
-  overflow: hidden;
 }
 
 .about_left {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   padding-left: 12%;
-  padding-right: 3%;
+  padding-right: 12%;
+
   padding-top: 2%;
   float: left;
   color: grey;
 }
 
-.about_right {
+/* .about_right {
   position: relative;
-  top: 100px;
-  /* border: 1px solid black; */
+  top: 20px;
+
   border-radius: 50%;
   top: 25%;
   right: 10%;
   height: 300px;
   padding-right: 10%;
+
   margin-left: 15%;
   height: 15%;
   text-align: center;
   float: right;
   font-size: 15rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  transform: translate(150px, 120px);
   color: #e97c49;
   text-shadow: -1px -1px 0 rgb(245, 224, 131), 1px -1px 0 #000,
     -1px 1px 0 rgb(224, 125, 146), 1px 1px 0 rgb(235, 165, 165);
@@ -143,4 +144,4 @@ h5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 450;
   color: #7c0606;
-}
+} */
