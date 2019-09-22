@@ -1,17 +1,31 @@
-import React from "react";
+import React, { Component } from "react";
 import Carrousel from "./Carrousel";
+import axios from "axios";
 
-const MainFeature = () => {
-  return (
-    <div style={{ position: "relative" }}>
-      <Carrousel />
-      <div className="testimonial">
-        <div className="wrapper">
-          "Thanks for making our class reunion a success!" - Linguine
+export default class MainFeature extends Component {
+  state = {
+    users: []
+  };
+
+  componentDidMount() {
+    axios
+      .get("http://localhost:5000/users/")
+      .then(response => {
+        this.setState({ users: response.data });
+        console.log(this.state.users);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+  render() {
+    return (
+      <div style={{ position: "relative" }}>
+        <Carrousel />
+        <div className="testimonial">
+          <div className="wrapper">Eat my shorts - Bart Simpson</div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default MainFeature;
+    );
+  }
+}
