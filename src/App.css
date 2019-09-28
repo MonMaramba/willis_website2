@@ -21,6 +21,7 @@
   font-style: italic;
   margin-left: 2%;
   display: flex;
+  word-wrap: break-word;
   width: 400px;
 }
 .subtext {
@@ -62,6 +63,27 @@ button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit {
 
 .carousel_image {
   background-size: cover !important;
+}
+
+/* About Us */
+
+.about_container {
+  display: flex;
+  background-color: rgb(241, 238, 233);
+}
+
+.about_left {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 7%;
+  padding-top: 4%;
+  float: left;
+  color: grey;
+}
+.about_left h2 {
+  font-size: 3rem;
 }
 
 /* Testimonial on Main Feature */
@@ -114,7 +136,7 @@ label {
 
 .comment {
   width: 550px;
-  height: 250px;
+  height: 150px;
   word-wrap: break-word;
   word-break: break-all;
   margin: auto;
@@ -127,25 +149,4 @@ label {
   padding: 15px;
   margin-bottom: 25px;
   background-color: #059156;
-}
-
-/* About Us */
-
-.about_container {
-  display: flex;
-  background-color: rgb(241, 238, 233);
-}
-
-.about_left {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.7rem;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-bottom: 4%;
-  padding-top: 2%;
-  float: left;
-  color: grey;
-}
-.about_left h2 {
-  font-size: 3rem;
 }

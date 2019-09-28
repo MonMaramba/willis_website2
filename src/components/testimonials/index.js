@@ -38,6 +38,14 @@ export default class Testimonial extends Component {
     });
   };
 
+  clearForm = () => {
+    this.setState({
+      username: "",
+      email: "",
+      comment: ""
+    });
+  };
+
   onSubmit = e => {
     e.preventDefault();
     let user = {
@@ -49,6 +57,7 @@ export default class Testimonial extends Component {
     axios
       .post("http://localhost:5000/users/add", user)
       .then(res => console.log(res.data));
+    this.clearForm();
   };
 
   animateForm = () => (

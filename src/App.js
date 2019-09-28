@@ -5,7 +5,7 @@ import MainFeature from "./components/mainfeature";
 import Testimonials from "./components/testimonials";
 import AboutUs from "./components/about/aboutUs";
 
-import Navbar from "./components/navbar.component";
+import Navbar from "./components/header_footer/navbar.component.js";
 
 function App() {
   return (
