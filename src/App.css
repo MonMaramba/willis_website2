@@ -69,7 +69,7 @@ button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit {
 
 .about_container {
   display: flex;
-  background-color: rgb(241, 238, 233);
+  background-color: rgb(191, 226, 201);
 }
 
 .about_left {
@@ -116,11 +116,12 @@ button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 1.5rem;
+  background-color: #eea786;
 }
 
 .testimonial_add h2 {
   padding: 15px;
-  margin-top: 50px;
+  padding-top: 8%;
   margin-bottom: 35px;
   font-size: 2.5rem;
 }
@@ -149,4 +150,33 @@ label {
   padding: 15px;
   margin-bottom: 25px;
   background-color: #059156;
+}
+
+/* Tech Stack */
+
+.tech_stack {
+  display: block;
+  align-content: center;
+  justify-content: center;
+}
+
+.tech_stack h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 5%;
+}
+
+.logo_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+img {
+  height: 180px;
+  width: auto;
+  margin: 20px;
+  flex-wrap: wrap;
 }

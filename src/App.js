@@ -6,6 +6,7 @@ import Testimonials from "./components/testimonials";
 import AboutUs from "./components/about/aboutUs";
 
 import Navbar from "./components/header_footer/navbar.component.js";
+import TechStack from "./components/techStack/index";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <MainFeature />
         <AboutUs />
         <Testimonials />
+        <TechStack />
       </div>
     </Router>
   );
