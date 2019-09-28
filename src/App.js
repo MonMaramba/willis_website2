@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainFeature from "./components/mainfeature";
 import Testimonials from "./components/testimonials";
 import AboutUs from "./components/about/aboutUs";
+import Footer from "./components/header_footer/footer.component";
 
 import Navbar from "./components/header_footer/navbar.component.js";
 import TechStack from "./components/techStack/index";
@@ -17,6 +18,7 @@ function App() {
         <AboutUs />
         <Testimonials />
         <TechStack />
+        <Footer />
       </div>
     </Router>
   );
