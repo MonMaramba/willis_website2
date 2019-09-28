@@ -8,16 +8,27 @@ import Footer from "./components/header_footer/footer.component";
 
 import Navbar from "./components/header_footer/navbar.component.js";
 import TechStack from "./components/techStack/index";
+import { Element } from "react-scroll";
 
 function App() {
   return (
     <Router>
       <div style={{}}>
-        <Navbar />
-        <MainFeature />
-        <AboutUs />
-        <Testimonials />
-        <TechStack />
+        <Element>
+          <Navbar />
+        </Element>
+        <Element name="Main">
+          <MainFeature />
+        </Element>
+        <Element name="About">
+          <AboutUs />
+        </Element>
+        <Element name="testimonial">
+          <Testimonials />
+        </Element>
+        <Element name="Technology">
+          <TechStack />
+        </Element>
         <Footer />
       </div>
     </Router>
