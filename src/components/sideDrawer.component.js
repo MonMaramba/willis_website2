@@ -7,9 +7,10 @@ import { scroller } from "react-scroll";
 const SideDrawer = props => {
   const scrollToElement = element => {
     scroller.scrollTo(element, {
-      duration: 1500,
+      duration: 1000,
       delay: 150,
-      smooth: true
+      smooth: true,
+      offset: -100
     });
     props.onClose(false);
   };

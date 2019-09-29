@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Carrousel from "./Carrousel";
 import axios from "axios";
+import Fade from "react-reveal/Fade";
 
 export default class MainFeature extends Component {
   state = {
     users: [],
     textToShow: [],
-    currentText: ""
+    currentText: `"Super fun!" - Super Freak`
   };
 
   newRandomNumber() {
@@ -34,19 +35,13 @@ export default class MainFeature extends Component {
           this.setState({
             currentText: this.state.textToShow[randomizer]
           });
-        }, 10000);
+        }, 7000);
       })
       .catch(error => {
         console.log(error);
       });
   }
 
-  componentWillUnmount() {
-    clearTimeout(this.timeoutHandle);
-    this.setState({
-      textToShow: ""
-    });
-  }
   render() {
     return (
       <div style={{ position: "relative" }}>
