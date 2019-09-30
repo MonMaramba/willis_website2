@@ -1,3 +1,4 @@
+/* Header */
 .navbar {
   background-color: rgb(53, 133, 199);
   display: flex;
@@ -61,9 +62,9 @@ button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit {
   overflow: hidden;
 }
 
-.carousel_image {
+/* .carousel_image {
   background-size: cover !important;
-}
+} */
 
 /* About Us */
 
