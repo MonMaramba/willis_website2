@@ -123,7 +123,7 @@ export default class AboutUs extends Component {
   render() {
     return (
       <Reveal
-        fraction={0.7}
+        fraction={0.6}
         onReveal={() => {
           this.setState({
             show: true

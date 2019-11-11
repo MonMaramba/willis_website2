@@ -14,7 +14,7 @@ export default class TechStack extends Component {
   render() {
     return (
       <div className="tech_stack">
-        <h2>Our Technology Stack</h2>
+        <h2>Our Technology Stack:</h2>
         <div className="logo_container">
           <img src={Image4} alt="shure logo" />
           <img src={Image2} alt="pioneer logo" />
