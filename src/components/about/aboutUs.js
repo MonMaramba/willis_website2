@@ -111,7 +111,7 @@ export default class AboutUs extends Component {
             <p>
               We have also formed alliances and affiliations that help us
               support one another so no requirement or venue will be too big or
-              too complex.
+              too complex for us.
             </p>
             <br />
           </div>
