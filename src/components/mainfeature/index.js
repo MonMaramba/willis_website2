@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Carrousel from "./Carrousel";
 import axios from "axios";
-import Fade from "react-reveal/Fade";
 
 export default class MainFeature extends Component {
   state = {
@@ -25,7 +24,6 @@ export default class MainFeature extends Component {
         this.setState({
           textToShow: text
         });
-        console.log(this.state.textToShow);
 
         setInterval(() => {
           let randomizer = Math.floor(

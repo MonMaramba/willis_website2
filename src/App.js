@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MainFeature from "./components/mainfeature";
 import Testimonials from "./components/testimonials";
 import AboutUs from "./components/about/aboutUs";
-import Footer from "./components/header_footer/footer.component";
+import Footer from "./components/header_footer/footer";
 
-import Navbar from "./components/header_footer/navbar.component.js";
+import Navbar from "./components/header_footer/navbar";
 import TechStack from "./components/techStack/index";
 import { Element } from "react-scroll";
 

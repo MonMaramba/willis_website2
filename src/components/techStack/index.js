@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { easePolyOut } from "d3-ease";
-import Animate from "react-move/Animate";
-import Reveal from "react-reveal/Reveal";
+
 import Image1 from "../../Resources/Images/rcf_logo.png";
 import Image2 from "../../Resources/Images/pioneer_logo.png";
 import Image3 from "../../Resources/Images/serato_logo.png";
